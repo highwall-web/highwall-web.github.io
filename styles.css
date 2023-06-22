@@ -182,7 +182,7 @@ nav a:nth-of-type(2)::before{
 .flash-card i{
     font-size: 2em;
     position: absolute;
-    top: 6rem;
+    top: 5.5rem;
 }
 
 .flash-card p{
@@ -190,14 +190,14 @@ nav a:nth-of-type(2)::before{
     font-weight: 400;
     word-spacing: 0.1px;
     position: absolute;
-    top: 10rem;
+    top: 9rem;
     width: 200px;
 }
 
 .flash-card h3{
     font-weight: 900;
     position: absolute;
-    top: 7.5rem;
+    top: 7rem;
 }
 
 .cards{
@@ -302,6 +302,10 @@ nav a:nth-of-type(2)::before{
         gap: 1rem;
     }
 
+    .flash-card p{
+        width: 10rem;
+    }
+
     .footer{
         padding: 0 1rem;
         font-size: 0.8em;
@@ -334,6 +338,10 @@ nav a:nth-of-type(2)::before{
     .skills{
         font-size: 3em;
         gap: 3rem;
+    }
+
+    .flash-card p{
+        width: 12rem;
     }
 
     .footer{
