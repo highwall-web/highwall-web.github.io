@@ -8,8 +8,9 @@ html{
 }
 
 body{
-    
+    background-color: #161616;
     margin: 0;
+    padding: 0;
     font-family: 'lato', sans-serif;
     display: block;
 }
@@ -21,6 +22,9 @@ body{
     background-color:#161616;
     background-image: radial-gradient(#303030 1px, transparent 1px );
     background-size: 30px 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -41,11 +45,11 @@ header{
     position: relative;
 }
 
-.content .divider{
-    margin: 0 auto;
-    width: 1200px;
-    min-width: 500px;
+.divider-container{
+    padding: 0 5rem;
     max-width: 1200px;
+    min-width: 250px;
+    margin: 0 auto;
 }
 
 
@@ -285,6 +289,10 @@ nav a:nth-of-type(2)::before{
         font-size: 0.8em;
     }
 
+    .divider-container{
+        padding: 0 1rem;
+    }
+
     #profile-pic{
         height: 100px;
         width: 100px;
@@ -315,8 +323,12 @@ nav a:nth-of-type(2)::before{
 
 @media screen and (min-width: 600px) and (max-width: 991px) {
     header{
-        padding: 0 5rem;
+        padding: 0 1rem;
         font-size: 1em;
+    }
+
+    .divider-container{
+        padding: 0 1rem;
     }
 
     #profile-pic{
