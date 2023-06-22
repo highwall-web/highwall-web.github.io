@@ -8,23 +8,13 @@ html{
 }
 
 body{
-    background-color: #161616;
     margin: 0;
     padding: 0;
     font-family: 'lato', sans-serif;
     display: block;
-}
-
-#main-content{
-    height: 1700px;
-    position:relative;
-    z-index: 1;
     background-color:#161616;
     background-image: radial-gradient(#303030 1px, transparent 1px );
     background-size: 30px 30px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 header{
@@ -216,6 +206,7 @@ nav a:nth-of-type(2)::before{
 
 .contacts{
     padding: 10rem 5rem;
+    margin-bottom: 5rem;
 }
 
 .mail-container{
@@ -311,10 +302,6 @@ nav a:nth-of-type(2)::before{
         gap: 1rem;
     }
 
-    #main-content{
-        height: 2580px;
-    }
-
     .footer{
         padding: 0 1rem;
         font-size: 0.8em;
@@ -347,10 +334,6 @@ nav a:nth-of-type(2)::before{
     .skills{
         font-size: 3em;
         gap: 3rem;
-    }
-
-    #main-content{
-        height: 2000px;
     }
 
     .footer{
