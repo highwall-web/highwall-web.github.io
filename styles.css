@@ -1,4 +1,5 @@
 
+
 *{
     color: #d9d9d9;
 }
@@ -141,12 +142,44 @@ nav a:nth-of-type(2)::before{
     position: relative;
     margin: 0;
     padding: 1rem;
-    font-size: 5em;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: calc(250px * 36);
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide{
+    height: 100px;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-img {
+    filter: invert(83%) sepia(57%) saturate(0%) hue-rotate(143deg) brightness(96%) contrast(88%);
+    width: 100%;
+    object-fit: contain;
+}
+
+.space {
+    width: 100px; /* Larghezza desiderata dello spazio tra le immagini */
+    background-color: red;
+    
 }
 
 .text-desc{
@@ -274,6 +307,8 @@ nav a:nth-of-type(2)::before{
     font-weight: 400;
 }
 
+
+
 @media screen and (max-width: 990px) {
     header{
         padding: 0 1rem;
@@ -295,11 +330,6 @@ nav a:nth-of-type(2)::before{
 
     .pres-card{
         font-size: 2em;
-    }
-
-    .skills{
-        font-size: 2em;
-        gap: 1rem;
     }
 
     .flash-card p{
@@ -333,11 +363,6 @@ nav a:nth-of-type(2)::before{
 
     .pres-card{
         font-size: 3em;
-    }
-
-    .skills{
-        font-size: 3em;
-        gap: 3rem;
     }
 
     .flash-card p{
