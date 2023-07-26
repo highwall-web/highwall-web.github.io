@@ -340,6 +340,27 @@ nav a:nth-of-type(2)::before{
         padding: 0 1rem;
         font-size: 0.8em;
     }
+
+    .carousel {
+        width: calc(100px * 36);
+    }
+    
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-100px * 9));
+        }
+    }
+    
+    .slide{
+        width: 100px;
+    }
+
+    .carousel-img {
+        width: 50px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 991px) {
@@ -372,6 +393,27 @@ nav a:nth-of-type(2)::before{
     .footer{
         padding: 0 1rem;
         font-size: 0.8em;
+    }
+
+    .carousel {
+        width: calc(250px * 36);
+    }
+    
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-250px * 9));
+        }
+    }
+    
+    .slide{
+        width: 250px;
+    }
+
+    .carousel-img {
+        width: 100%;
     }
 
 }
