@@ -344,7 +344,7 @@ nav a:nth-of-type(2)::before{
     }
 
     .carousel {
-        width: calc(100px * 36);
+        width: calc(100px * 40);
     }
     
     @keyframes slide{
@@ -352,7 +352,7 @@ nav a:nth-of-type(2)::before{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(calc(-100px * 9));
+            transform: translateX(calc(-100px * 10));
         }
     }
     
@@ -404,7 +404,7 @@ nav a:nth-of-type(2)::before{
     }
 
     .carousel {
-        width: calc(250px * 36);
+        width: calc(250px * 40);
     }
     
     @keyframes slide{
@@ -412,7 +412,7 @@ nav a:nth-of-type(2)::before{
             transform: translateX(0);
         }
         100%{
-            transform: translateX(calc(-250px * 9));
+            transform: translateX(calc(-250px * 10));
         }
     }
 
