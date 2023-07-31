@@ -153,6 +153,10 @@ nav a:nth-of-type(2)::before{
     animation: slide 20s linear infinite;
 }
 
+.carousel:hover{
+    animation-play-state: paused;
+}
+
 @keyframes slide{
     0%{
         transform: translateX(0);
