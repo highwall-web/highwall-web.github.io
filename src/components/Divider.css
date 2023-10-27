@@ -1,0 +1,10 @@
+.divider{
+    border-bottom: 1px solid rgb(70, 70, 70);
+    position: relative;
+}
+
+.divider-container{
+    max-width: 70rem;
+    min-width: 10rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,32 @@
+.flash-card{
+    position: relative;
+    width: 11rem;
+    height: 13rem;
+    background-color: rgba(26, 26, 26, 0.7);
+    text-align: left;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 3rem 3rem 8rem;
+    padding: 1.5rem;
+}
+
+.flash-card i{
+    font-size: 2em;
+    position: relative;
+    margin: 0;
+}
+
+.flash-card p{
+    font-size: 0.8em;
+    font-weight: 400;
+    position: relative;
+    width: auto;
+    margin: 0;
+    top: 0;
+}
+
+.flash-card h3{
+    font-weight: 900;
+    position: relative;
+    margin: 0;
+}

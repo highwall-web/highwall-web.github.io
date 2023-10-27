@@ -1,0 +1,48 @@
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 2rem;
+    max-width: 70rem;
+    min-width: 10rem;
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+
+.top-header-content{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3px 0;
+    height: 100%;
+    width: auto;
+
+}
+
+#logo{
+    height: 1.5rem;
+    max-height: 1.5rem;
+    object-fit: cover;
+}
+
+.header-nav a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.header-nav a:nth-of-type(2)::before, .header-nav a:nth-of-type(3)::before{
+    content: "/";
+    padding: 0 1rem;
+}
