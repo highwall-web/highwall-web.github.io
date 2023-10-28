@@ -42,7 +42,14 @@ header{
     font-weight: 400;
 }
 
-.header-nav a:nth-of-type(2)::before, .header-nav a:nth-of-type(3)::before{
+.header-nav button {
+    border: 0;
+    background: transparent;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.header-nav a:nth-of-type(1)::after, .header-nav a:nth-of-type(2)::after {
     content: "/";
     padding: 0 1rem;
 }

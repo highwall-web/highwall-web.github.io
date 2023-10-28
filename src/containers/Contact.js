@@ -7,7 +7,7 @@ export default function Contact(){
         <section className="contacts">
             <h2 className="gradient">Avete intenzione di assumermi?</h2>
             <div className="mail-container">
-                <Button/>
+                <Button value="Contattatemi" height="3" width="10"/>
             </div>
         </section>
     );

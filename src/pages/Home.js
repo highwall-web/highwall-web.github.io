@@ -15,6 +15,7 @@ const Home = () => {
             <FlashCards/>
             <Divider/>
             <Contact/>
+
         </div>
     )
 }
