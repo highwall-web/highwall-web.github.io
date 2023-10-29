@@ -12,18 +12,23 @@ export default function App() {
 
     const [openLogin, setOpenLogin] = useState(false);
 
+    const [isLogged, setIsLogged] = useState(null);
+    const [isAdmin, setIsAdmin] = useState(false);
+
   return (
       <Router>
           <main>
-              <Navbar openLogin={setOpenLogin}/>
+              <Navbar openLogin={setOpenLogin} isLogged={isLogged}/>
               <Divider/>
               <Routes>
-                  <Route path="/" element={<Home/>}/>
+                  <Route path="/" element={<Home isAdmin={isAdmin}/>}/>
               </Routes>
               <Divider/>
               <Footer/>
           </main>
-          {openLogin && <LoginContainer openLogin={setOpenLogin}/>}
+          {openLogin &&
+              <LoginContainer openLogin={setOpenLogin} isAdmin={isAdmin} setIsAdmin={setIsAdmin} isLogged={isLogged}
+                              setIsLogged={setIsLogged}/>}
       </Router>
 
   );

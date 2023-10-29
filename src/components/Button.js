@@ -1,27 +1,28 @@
 import React, {useState} from "react";
 import "./Button.css"
 
-export default function Button(props) {
+export default function Button({value, height, width, handleClick = null}) {
 
-    const [buttonWidth, setButtonWidth] = useState(props.width);
-    const [buttonHeight, setButtonHeight] = useState(props.height);
+    const [buttonWidth, setButtonWidth] = useState(width);
+    const [buttonHeight, setButtonHeight] = useState(height);
     const [textSize, setTextSize] = useState(100);
 
     function handleMouseEnter() {
-        setButtonWidth(props.width * 0.9);
-        setButtonHeight(props.height * 0.9);
+        setButtonWidth(width * 0.9);
+        setButtonHeight(height * 0.9);
         setTextSize(90);
     }
 
     function handleMouseLeave() {
-        setButtonWidth(props.width);
-        setButtonHeight(props.height);
+        setButtonWidth(width);
+        setButtonHeight(height);
         setTextSize(100);
     }
 
 
     return(
         <button
+            onClick={handleClick}
             className="generic-button"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -31,7 +32,7 @@ export default function Button(props) {
                 fontSize: `${textSize}%`
             }}
         >
-            {props.value}
+            {value}
         </button>
     );
 }

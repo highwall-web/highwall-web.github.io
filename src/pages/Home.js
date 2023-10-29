@@ -6,16 +6,16 @@ import Divider from "../components/Divider";
 import FlashCards from "../containers/FlashCards";
 import Contact from "../containers/Contact";
 
-const Home = () => {
+const Home = ({isAdmin}) => {
     return (
         <div>
             <About/>
-            <Knowledge/>
+            {isAdmin && <Divider/>}
+            {isAdmin && <Knowledge/>}
             <Divider/>
             <FlashCards/>
             <Divider/>
             <Contact/>
-
         </div>
     )
 }
