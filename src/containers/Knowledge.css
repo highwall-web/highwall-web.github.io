@@ -1,0 +1,31 @@
+.knowledge {
+    padding: 5rem 0;
+    align-items: center;
+}
+
+.knowledge-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    min-width: var(--min-width);
+    padding-top: 1rem;
+}
+
+.badge-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.add-badge-button-container {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}

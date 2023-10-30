@@ -1,5 +1,5 @@
 .flash-cards-container{
-    padding: 5rem 0 5rem 0;
+    margin: 2rem auto;
 }
 
 .flash-cards{
@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin: 2rem auto;
+    padding-top: 1rem;
+
 }
 

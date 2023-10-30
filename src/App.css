@@ -1,6 +1,14 @@
+:root {
+    --text-color: #d9d9d9;
+    --global-background: #161616;
+    --card-background: #191919;
+    --max-width: 70rem;
+    --min-width: 10rem;
+}
+
 
 *{
-  color: #d9d9d9;
+    color: var(--text-color);
 }
 
 html{
@@ -12,7 +20,7 @@ body{
   padding: 0;
   font-family: 'lato', sans-serif;
   display: block;
-  background-color:#161616;
+    background-color: var(--global-background);
   background-image: radial-gradient(#303030 0.7px, transparent 0.7px );
   background-size: 25px 25px;
 }
@@ -23,6 +31,8 @@ main{
   display: block;
   width: 100%;
   text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-desc{
@@ -35,11 +45,4 @@ main{
   margin: 0;
   font-weight: 400;
   font-size: 3em;
-}
-
-.gradient{
-  background-clip: inherit;
-  background: -webkit-linear-gradient(0deg ,#eee 33%, #5f5f5f 66%, #2c2c2c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

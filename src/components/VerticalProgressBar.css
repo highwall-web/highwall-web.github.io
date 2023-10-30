@@ -1,0 +1,16 @@
+.progress-background {
+    width: 0.3rem;
+    border: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: var(--text-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

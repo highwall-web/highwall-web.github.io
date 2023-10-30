@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./Button.css"
 
-export default function Button({value, height, width, handleClick = null}) {
+export default function Button({value, height, width, handleClick = null, borderRadius = "5"}) {
 
     const [buttonWidth, setButtonWidth] = useState(width);
     const [buttonHeight, setButtonHeight] = useState(height);
@@ -22,6 +22,7 @@ export default function Button({value, height, width, handleClick = null}) {
 
     return(
         <button
+            type="submit"
             onClick={handleClick}
             className="generic-button"
             onMouseEnter={handleMouseEnter}
@@ -29,7 +30,8 @@ export default function Button({value, height, width, handleClick = null}) {
             style={{
                 width: `${buttonWidth}rem`,
                 height: `${buttonHeight}rem`,
-                fontSize: `${textSize}%`
+                fontSize: `${textSize}%`,
+                borderRadius: `${borderRadius}px`
             }}
         >
             {value}

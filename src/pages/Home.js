@@ -6,12 +6,12 @@ import Divider from "../components/Divider";
 import FlashCards from "../containers/FlashCards";
 import Contact from "../containers/Contact";
 
-const Home = ({isAdmin}) => {
+const Home = ({isAdmin, isAddingBadge, setDoc, doc}) => {
     return (
         <div>
             <About/>
-            {isAdmin && <Divider/>}
-            {isAdmin && <Knowledge/>}
+            <Divider/>
+            <Knowledge isAddingBadge={isAddingBadge} setDoc={setDoc} doc={doc} isAdmin={isAdmin}/>
             <Divider/>
             <FlashCards/>
             <Divider/>

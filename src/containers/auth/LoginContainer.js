@@ -26,12 +26,14 @@ function LoginContainer({openLogin, isAdmin, setIsAdmin, setIsLogged, isLogged})
                     setIsAdmin(true);
                 }
             })
+            .catch((error) => {
+                console.error("Impossibile effettare il login", error.message);
+            });
     }
 
     //Gestisce il logout
     function onLogout() {
         signOut(auth).then(() => {
-            console.log("Signed out!");
             openLogin(false);
             setIsLogged(false);
             if (isAdmin) {
@@ -41,8 +43,8 @@ function LoginContainer({openLogin, isAdmin, setIsAdmin, setIsLogged, isLogged})
     }
 
     return (
-        <div className="login-background">
-            <div className="login-modal">
+        <div className="modal-background">
+            <div className="modal">
                 <div className="close-btn-container">
                     <CloseButton openModal={openLogin}/>
                 </div>

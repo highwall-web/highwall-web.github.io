@@ -1,15 +1,14 @@
 import React from 'react'
 import "./GradientText.css"
 
-function GradientText(props){
+function GradientText({value, size}) {
 
-    let size = props.size;
-    let fontStyle = {
+    const fontStyle = {
         fontSize: `${size}rem`
     }
 
     return (
-        <h1 className="pres-card gradient" style = {fontStyle}>{props.value}</h1>
+        <h1 className="pres-card gradient" style={fontStyle}>{value}</h1>
     )
 }
 export default GradientText

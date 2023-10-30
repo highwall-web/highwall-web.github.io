@@ -4,8 +4,8 @@ footer{
     left: 0;
     right: 0;
     z-index: 2;
-    max-width: 70rem;
-    min-width: 10rem;
+    max-width: var(--max-width);
+    min-width: var(--min-width);
     margin: 0.5rem auto;
 }
 
