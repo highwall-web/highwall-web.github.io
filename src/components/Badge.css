@@ -2,7 +2,7 @@
     background-color: var(--card-background);
     display: grid;
     grid-template-columns: 5rem 1rem;
-    grid-template-rows: 3rem 2rem;
+    grid-template-rows: 3rem 3rem;
     padding: 1rem;
     border-radius: 5px;
 }

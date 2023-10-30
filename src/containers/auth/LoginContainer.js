@@ -75,6 +75,7 @@ function LoginContainer({openLogin, isAdmin, setIsAdmin, setIsLogged, isLogged})
                     </form>
                 ) : (
                     <div className={"button-container"}>
+                        <span>Sei Loggato come admin!</span>
                         <Button value="Logout" width="5" height="3" handleClick={onLogout}/>
                     </div>
                 )

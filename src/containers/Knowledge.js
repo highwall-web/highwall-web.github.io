@@ -38,7 +38,6 @@ export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin}) {
         <section className="knowledge">
             <GradientText value={"Skills e Conoscenze"} size={"1.5"}/>
             <div className={"knowledge-content"}>
-                <div className={"badge-container"}>
                     {doc.map((doc) => (
                         <Badge
                             key={doc.badgeName}
@@ -47,8 +46,6 @@ export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin}) {
                             badgeProgress={doc.badgePercentage}
                         />
                     ))}
-
-                </div>
                 <div className={"add-badge-button-container"}>
                     {isAdmin && <Button
                         width={"2"}
@@ -57,6 +54,7 @@ export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin}) {
                         borderRadius={"25"}
                         handleClick={handleClick}/>}
                 </div>
+
             </div>
         </section>
     );
