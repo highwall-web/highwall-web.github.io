@@ -1,5 +1,5 @@
 .flash-cards-container{
-    margin: 5rem auto;
+    padding: 5rem var(--padding-full);
 }
 
 .flash-cards{
