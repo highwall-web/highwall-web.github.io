@@ -3,6 +3,7 @@
     --global-background: #17181D;
     --card-background: #292C35;
     --button-background: #E09145;
+    --button-background-rgba: rgba(224, 145, 69, 0.5);
     --max-width: 70rem;
     --min-width: 2rem;
     --padding-full: 12rem;

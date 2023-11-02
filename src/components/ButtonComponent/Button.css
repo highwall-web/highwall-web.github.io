@@ -5,6 +5,7 @@
     border: 0;
     transition: 0.5s;
     color: var(--global-background);
+    box-shadow: 0 0 20px var(--button-background-rgba);
 }
 
 .generic-button:hover {
