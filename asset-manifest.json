@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.1202b63a.css",
-    "main.js": "/static/js/main.4598caff.js",
+    "main.js": "/static/js/main.06c7e930.js",
+    "static/media/CV-Mauro-Pio-Altamura.pdf": "/static/media/CV-Mauro-Pio-Altamura.dc30e9d19ee060c2d6c5.pdf",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.7581d23b0bbb90431414.jpg",
     "static/media/logo-white.png": "/static/media/logo-white.6e60b1000b3e3b55bafd.png",
     "index.html": "/index.html",
     "main.1202b63a.css.map": "/static/css/main.1202b63a.css.map",
-    "main.4598caff.js.map": "/static/js/main.4598caff.js.map"
+    "main.06c7e930.js.map": "/static/js/main.06c7e930.js.map"
   },
   "entrypoints": [
     "static/css/main.1202b63a.css",
-    "static/js/main.4598caff.js"
+    "static/js/main.06c7e930.js"
   ]
 }
