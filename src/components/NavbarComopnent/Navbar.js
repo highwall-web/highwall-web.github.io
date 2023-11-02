@@ -3,18 +3,20 @@ import React from "react";
 import "./Navbar.css"
 import logo from "../../assets/logo-white.png"
 import {Link} from "react-router-dom";
+import pdf from "../../assets/CV-Mauro-Pio-Altamura.pdf"
 
 export default function Navbar({openLogin}) {
 
-    return(
+    return (
         <header>
             <div className="top-header-content">
                 <Link to="/">
                     <img src={logo} alt="Logo Mauro" id="logo"/>
                 </Link>
                 <nav className="header-nav">
-                    <a href="https://www.linkedin.com/in/mauro-pio-altamura-5b5b6027a" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href="../../assets/CV-Mauro-Pio-Altamura.pdf" download>CV</a>
+                    <a href="https://www.linkedin.com/in/mauro-pio-altamura-5b5b6027a" target="_blank"
+                       rel="noreferrer">LinkedIn</a>
+                    <a href={pdf} target="_blank" rel="noreferrer">CV</a>
                     <button onClick={() => {
                         openLogin(true);
                     }}>Admin
