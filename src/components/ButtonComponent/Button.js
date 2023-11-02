@@ -21,20 +21,40 @@ export default function Button({value, height, width, handleClick = null, border
 
 
     return(
-        <button
-            type="submit"
-            onClick={handleClick}
-            className="generic-button"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            style={{
-                width: `${buttonWidth}rem`,
-                height: `${buttonHeight}rem`,
-                fontSize: `${textSize}%`,
-                borderRadius: `${borderRadius}px`
-            }}
-        >
-            {value}
-        </button>
+        handleClick != null ? (
+            <button
+                type="submit"
+                onClick={handleClick}
+                className="generic-button"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={{
+                    width: `${buttonWidth}rem`,
+                    height: `${buttonHeight}rem`,
+                    fontSize: `${textSize}%`,
+                    borderRadius: `${borderRadius}px`
+                }}
+            >
+                {value}
+            </button>
+        ) : (
+            <button
+                className="generic-button"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={{
+                    width: `${buttonWidth}rem`,
+                    height: `${buttonHeight}rem`,
+                    fontSize: `${textSize}%`,
+                    borderRadius: `${borderRadius}px`
+                }}
+            >
+                <a href={"mailto:mauropio.altamura@outlook.it"}>
+                    {value}
+                </a>
+
+            </button>
+        )
+
     );
 }

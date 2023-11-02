@@ -14,7 +14,7 @@ export default function Navbar({openLogin}) {
                 </Link>
                 <nav className="header-nav">
                     <a href="https://www.linkedin.com/in/mauro-pio-altamura-5b5b6027a" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href="../../assets/CV-Mauro-Pio-Altamura.pdf" target="_blank" rel="noreferrer">CV</a>
+                    <a href="../../assets/CV-Mauro-Pio-Altamura.pdf" download>CV</a>
                     <button onClick={() => {
                         openLogin(true);
                     }}>Admin
