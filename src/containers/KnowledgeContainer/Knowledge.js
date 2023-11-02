@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import "./Knowledge.css"
-import Badge from "../components/Badge";
-import Button from "../components/Button";
-import GradientText from "../components/GradientText";
+import Badge from "../../components/BadgeComponent/Badge";
+import Button from "../../components/ButtonComponent/Button";
+import GradientText from "../../components/GradientTextComponent/GradientText";
 import {collection, getDocs} from "firebase/firestore"
-import {db} from "../firebase";
+import {db} from "../../firebase";
 
 export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin}) {
 

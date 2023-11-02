@@ -2,7 +2,7 @@
     position: relative;
     width: 11rem;
     height: 13rem;
-    background-color: rgba(26, 26, 26, 0.7);
+    background-color: var(--card-background);
     text-align: left;
     border-radius: 5px;
     display: grid;

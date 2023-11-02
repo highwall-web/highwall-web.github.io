@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import "./LoginContainer.css"
-import CloseButton from "../../components/CloseButton";
-import GradientText from "../../components/GradientText";
-import Button from "../../components/Button";
+import CloseButton from "../../components/CloseButtonComponent/CloseButton";
+import GradientText from "../../components/GradientTextComponent/GradientText";
+import Button from "../../components/ButtonComponent/Button";
 import {signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {auth} from '../../firebase.js';
 
