@@ -46,14 +46,17 @@ export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin}) {
                             badgeProgress={doc.badgePercentage}
                         />
                     ))}
-                <div className={"add-badge-button-container"}>
-                    {isAdmin && <Button
-                        width={"2"}
-                        height={"2"}
-                        value={`+`}
-                        borderRadius={"25"}
-                        handleClick={handleClick}/>}
-                </div>
+                {isAdmin &&
+                    <div className={"add-badge-button-container"}>
+                        <Button
+                            width={"2"}
+                            height={"2"}
+                            value={`+`}
+                            borderRadius={"25"}
+                            handleClick={handleClick}
+                        />
+                    </div>
+                }
 
             </div>
         </section>
