@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import Navbar from "./components/Navbar";
-import Divider from "./components/Divider";
+import Navbar from "./components/NavbarComopnent/Navbar";
+import Divider from "./components/DividerComponent/Divider";
 import "./App.css"
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import Footer from "./components/FooterComponent/Footer";
 import LoginContainer from "./containers/auth/LoginContainer";
-import AddBadgeModal from "./containers/AddBadgeModal";
+import AddBadgeModal from "./containers/AddBadgeModalContainer/AddBadgeModal";
 
 
 export default function App() {

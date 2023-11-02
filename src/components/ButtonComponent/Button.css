@@ -1,9 +1,10 @@
 .generic-button {
-    background-color: #1a1a1a;
+    background-color: var(--button-background);
     margin: 0 auto;
     position: relative;
     border: 0;
     transition: 0.5s;
+    color: var(--global-background);
 }
 
 .generic-button:hover {

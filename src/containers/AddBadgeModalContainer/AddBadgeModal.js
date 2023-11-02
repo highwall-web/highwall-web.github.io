@@ -1,12 +1,12 @@
 import React, {useRef, useState} from 'react'
 import "./AddBadgeModal.css"
-import GradientText from "../components/GradientText";
-import Button from "../components/Button";
+import GradientText from "../../components/GradientTextComponent/GradientText";
+import Button from "../../components/ButtonComponent/Button";
 import {addDoc, collection} from "firebase/firestore"
-import {db, storage} from "../firebase";
+import {db, storage} from "../../firebase";
 import {getDownloadURL, ref, uploadBytes} from "firebase/storage";
 import {v4} from "uuid";
-import CloseButton from "../components/CloseButton";
+import CloseButton from "../../components/CloseButtonComponent/CloseButton";
 
 const AddBadgeModal = ({openAdd, setDoc}) => {
 

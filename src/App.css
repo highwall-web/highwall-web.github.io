@@ -1,9 +1,11 @@
 :root {
-    --text-color: #d9d9d9;
-    --global-background: #161616;
-    --card-background: #191919;
+    --text-color: #CDCDCD;
+    --global-background: #17181D;
+    --card-background: #292C35;
+    --button-background: #E09145;
     --max-width: 70rem;
-    --min-width: 10rem;
+    --min-width: 2rem;
+    --padding-full: 12rem;
 }
 
 
@@ -12,7 +14,7 @@
 }
 
 html{
-  font-size: 12px;
+  font-size: 20px;
 }
 
 body{
@@ -45,4 +47,24 @@ main{
   margin: 0;
   font-weight: 400;
   font-size: 3em;
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 15px;
+    }
+
+    :root{
+        --padding-full: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+    html{
+        font-size: 18px;
+    }
+
+    :root{
+        --padding-full: 7rem;
+    }
 }

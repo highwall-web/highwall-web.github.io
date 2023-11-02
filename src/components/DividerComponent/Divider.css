@@ -1,0 +1,12 @@
+.divider{
+    border-bottom: 1px solid var(--card-background);
+    width: 100%;
+}
+
+.divider-container{
+    padding: 0 var(--padding-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

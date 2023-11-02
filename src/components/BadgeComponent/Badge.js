@@ -1,5 +1,5 @@
 import "./Badge.css"
-import VerticalProgressBar from "./VerticalProgressBar";
+import VerticalProgressBar from "../VerticalProgressBarComponent/VerticalProgressBar";
 
 const Badge = ({badgeLogo, badgeDesc, badgeProgress}) => {
 
