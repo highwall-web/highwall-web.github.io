@@ -31,7 +31,8 @@ function LoginContainer({openLogin, isAdmin, setIsAdmin, setIsLogged, isLogged})
     }
 
     //Gestisce il logout
-    function onLogout() {
+    function onLogout(e) {
+        e.preventDefault();
         signOut(auth).then(() => {
             openLogin(false);
             setIsLogged(false);
@@ -73,10 +74,14 @@ function LoginContainer({openLogin, isAdmin, setIsAdmin, setIsLogged, isLogged})
                         </div>
                     </form>
                 ) : (
-                    <div className={"button-container"}>
+                    <form className={"login-form"}>
+                        <GradientText value="LOGOUT" size="1"/>
                         <span>Sei Loggato come admin!</span>
-                        <Button value="Logout" width="5" height="3" handleClick={onLogout}/>
-                    </div>
+                        <div className={"button-container"}>
+                            <Button value="Logout" width="5" height="3" handleClick={onLogout}/>
+                        </div>
+                    </form>
+
                 )
 
                 }
