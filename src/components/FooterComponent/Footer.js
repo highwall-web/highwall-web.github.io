@@ -11,7 +11,8 @@ const Footer = () => {
                     <a className={"link"} href="../../assets/CV-Mauro-Pio-Altamura.pdf" target="_blank"
                        rel="noreferrer">CV</a>
                     <p className="rights">©{currentYear} All rights reserved.</p>
-                    <p className={"icons"}>All icons used are from <a href={"https://icons8.com/"}>icons8.com</a></p>
+                    <p className={"icons"}>All icons used are from <a href={"https://icons8.com/"} target={"_blank"}
+                                                                      rel={"noreferrer"}>icons8.com</a></p>
                 </nav>
         </footer>
     )
