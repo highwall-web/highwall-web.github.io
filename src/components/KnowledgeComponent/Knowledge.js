@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
 import "./Knowledge.css"
-import Badge from "../../components/BadgeComponent/Badge";
-import Button from "../../components/ButtonComponent/Button";
-import GradientText from "../../components/GradientTextComponent/GradientText";
+import Badge from "../BadgeComponent/Badge";
+import Button from "../ButtonComponent/Button";
+import GradientText from "../GradientTextComponent/GradientText";
 import {collection, getDocs} from "firebase/firestore"
 import {db} from "../../firebase";
 
-export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin}) {
+export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin, setBadge, badge, isEditingBadge}) {
 
 
     async function fetchData() {
@@ -30,22 +30,39 @@ export default function Knowledge({isAddingBadge, setDoc, doc, isAdmin}) {
     }, [setDoc])
 
 
+    function handleBadgeClick(badgeName, badgeImage, badgePercentage, id) {
+        if (isAdmin) {
+            setBadge({
+                ...badge,
+                idDoc: id,
+                name: badgeName,
+                image: badgeImage,
+                percentage: badgePercentage,
+            });
+            isEditingBadge(true);
+        }
+    }
+
+
     function handleClick() {
         isAddingBadge(true);
     }
 
-    return(
+    return (
         <section className="knowledge">
             <GradientText value={"Skills e Conoscenze"} size={"1.5"}/>
             <div className={"knowledge-content"}>
-                    {doc.map((doc) => (
-                        <Badge
-                            key={doc.badgeName}
-                            badgeDesc={doc.badgeName}
-                            badgeLogo={doc.badgeImageUrl}
-                            badgeProgress={doc.badgePercentage}
-                        />
-                    ))}
+                {doc.map((doc) => (
+                    <Badge
+                        key={doc.idDoc}
+                        id={doc.idDoc}
+                        badgeDesc={doc.name}
+                        badgeLogo={doc.image}
+                        badgeProgress={doc.percentage}
+                        handleClick={handleBadgeClick}
+                        isAdmin={isAdmin}
+                    />
+                ))}
                 {isAdmin &&
                     <div className={"add-badge-button-container"}>
                         <Button

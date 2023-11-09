@@ -1,10 +1,18 @@
 import "./Badge.css"
 import VerticalProgressBar from "../VerticalProgressBarComponent/VerticalProgressBar";
 
-const Badge = ({badgeLogo, badgeDesc, badgeProgress}) => {
+const Badge = ({badgeLogo, badgeDesc, badgeProgress, handleClick, id, isAdmin}) => {
+
+    function handleClickBadge() {
+        if (handleClick) {
+            handleClick(badgeDesc, badgeLogo, badgeProgress, id);
+        }
+    }
 
     return (
-        <div className={"badge"}>
+        <div className={"badge"} onClick={handleClickBadge} style={{
+            cursor: isAdmin ? "pointer" : "default"
+        }}>
             <div className={"badge-logo-container"}>
                 <img className={"badge-logo"} src={badgeLogo} alt={"JavaScript"}/>
             </div>

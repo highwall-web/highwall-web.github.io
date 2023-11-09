@@ -23,7 +23,6 @@ export default function Button({value, height, width, handleClick = null, border
     return(
         handleClick != null ? (
             <button
-                type="submit"
                 onClick={handleClick}
                 className="generic-button"
                 onMouseEnter={handleMouseEnter}

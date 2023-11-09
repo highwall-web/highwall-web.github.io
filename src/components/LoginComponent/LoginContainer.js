@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import "./LoginContainer.css"
-import CloseButton from "../../components/CloseButtonComponent/CloseButton";
-import GradientText from "../../components/GradientTextComponent/GradientText";
-import Button from "../../components/ButtonComponent/Button";
+import CloseButton from "../CloseButtonComponent/CloseButton";
+import GradientText from "../GradientTextComponent/GradientText";
+import Button from "../ButtonComponent/Button";
 import {signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {auth} from '../../firebase.js';
 
@@ -19,7 +19,6 @@ function LoginContainer({openLogin, isAdmin, setIsAdmin, setIsLogged, isLogged})
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                console.log(user);
                 openLogin(false);
                 setIsLogged(true);
                 if (user.email === ADMIN_MAIL) {

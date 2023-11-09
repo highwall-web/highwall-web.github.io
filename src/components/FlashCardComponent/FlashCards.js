@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../../components/CardComponent/Card";
+import Card from "../CardComponent/Card";
 import "./FlashCards.css"
-import GradientText from "../../components/GradientTextComponent/GradientText";
+import GradientText from "../GradientTextComponent/GradientText";
 
 export default function FlashCards(){
     return(
