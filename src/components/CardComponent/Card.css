@@ -1,13 +1,14 @@
 .flash-card{
     position: relative;
-    width: 11rem;
-    height: 13rem;
+    width: var(--card-width);
+    height: var(--card-height);
     background-color: var(--card-background);
     text-align: left;
     border-radius: 5px;
     display: grid;
     grid-template-rows: 3rem 3rem 8rem;
     padding: 1.5rem;
+    font-size: var(--card-text);
 }
 
 .flash-card i{

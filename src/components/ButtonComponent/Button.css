@@ -10,6 +10,7 @@
 
 .generic-button:hover {
     cursor: pointer;
+    box-shadow: none;
 }
 
 .generic-button a {

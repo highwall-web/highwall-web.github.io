@@ -7,7 +7,10 @@
     --max-width: 70rem;
     --min-width: 2rem;
     --modal-width: 20rem;
+    --card-width: 11rem;
+    --card-height: 13rem;
     --padding-full: 12rem;
+    --card-text: 1rem;
 }
 
 
@@ -68,6 +71,8 @@ main{
 
     :root{
         --padding-full: 2rem;
+        --card-width: 7rem;
+        --card-text: 0.88rem;
     }
 }
 
@@ -78,5 +83,6 @@ main{
 
     :root{
         --padding-full: 7rem;
+        --card-width: 11rem;
     }
 }
