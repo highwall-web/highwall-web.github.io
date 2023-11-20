@@ -11,6 +11,7 @@
     --card-height: 13rem;
     --padding-full: 12rem;
     --card-text: 1rem;
+    --card-padding: 1.5rem;
 }
 
 
@@ -84,5 +85,6 @@ main{
     :root{
         --padding-full: 7rem;
         --card-width: 11rem;
+        --card-text: 1rem;
     }
 }

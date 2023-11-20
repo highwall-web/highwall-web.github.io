@@ -18,7 +18,7 @@ export default function FlashCards(){
                       title = "Informazione"
                       desc = "Sono sempre pronto a mettermi in gioco per imparare cose nuove e allargare i miei orizzonti."/>
                 <Card icon = "fa-solid fa-code"
-                      title = "Programmazione"
+                      title="Coding"
                       desc = "Ho una discreta esperienza nella programmazione dovuta ai vari anni di studio e ai vari progetti a cui ho partecipato."/>
             </div>
 

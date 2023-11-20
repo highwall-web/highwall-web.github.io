@@ -7,7 +7,7 @@
     border-radius: 5px;
     display: grid;
     grid-template-rows: 3rem 3rem 8rem;
-    padding: 1.5rem;
+    padding: var(--card-padding);
     font-size: var(--card-text);
 }
 
@@ -21,7 +21,6 @@
     font-size: 0.8em;
     font-weight: 400;
     position: relative;
-    width: auto;
     margin: 0;
     top: 0;
 }
