@@ -23,7 +23,6 @@ const EditBadgeModal = ({setOpenEdit, badge, setDocs, docs}) => {
         if (badgeName !== badge.name) {
             isUpdated = true;
             updatedBadge.name = badgeName;
-            console.log("modificato nome")
             try {
                 await updateDoc(badgeRef, {
                     name: badgeName
@@ -38,7 +37,6 @@ const EditBadgeModal = ({setOpenEdit, badge, setDocs, docs}) => {
         if (badgePercentage !== badge.percentage) {
             isUpdated = true;
             updatedBadge.percentage = badgePercentage;
-            console.log("modificata percentuale")
             try {
                 await updateDoc(badgeRef, {
                     percentage: badgePercentage

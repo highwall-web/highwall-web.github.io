@@ -1,12 +1,12 @@
 import React from "react";
 import "./Card.css"
 
-export default function Card(props){
+export default function Card({icon, title, desc}) {
     return(
         <div className="flash-card">
-            <i className={props.icon}></i>
-            <h3>{props.title}</h3>
-            <p>{props.desc}</p>
+            <i className={icon}></i>
+            <h3>{title}</h3>
+            <p>{desc}</p>
         </div>
     );
 }
