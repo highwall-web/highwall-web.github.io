@@ -14,7 +14,7 @@ const Badge = ({badgeLogo, badgeDesc, badgeProgress, handleClick, id, isAdmin}) 
             cursor: isAdmin ? "pointer" : "default"
         }}>
             <div className={"badge-logo-container"}>
-                <img className={"badge-logo"} src={badgeLogo} alt={"JavaScript"}/>
+                <img className={"badge-logo"} src={badgeLogo} alt={badgeDesc}/>
             </div>
             <div className={"badge-description-container"}>
                 <p className={"badge-description"}>{badgeDesc}</p>
